@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Party !</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/toaster.css">
+
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+  <body ng-app="guestList">
+    <facebook app-id="1380731352256092"></facebook>
+    <div class="container">
+
+      <button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+      <div id="theSidebar" class="sidebar">
+        <button class="close-button fa fa-fw fa-close"></button>
+        
+        <h1> Bang !</h1>
+        
+        <facebook-login auto_logout="true" scope="basic_info"></facebook-login>
+
+      </div>
+      <div id="theGrid" class="main">
+        
+        <div ng-view ></div>
+
+      </div>
+    </div><!-- /container -->
+
+    <script type="text/javascript" src="bower_components/angularjs/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="js/facebook.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/homeController.js"></script>
+    <script type="text/javascript" src="app/mainController.js"></script>
+
+    <script type="text/javascript" src="app/facebookFactory.js"></script>
+    <script type="text/javascript" src="app/mainFactory.js"></script>
+    <script type="text/javascript" src="js/toaster.js"></script>
+  </body>
+</html>

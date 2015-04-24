@@ -1,0 +1,18 @@
+<section class="grid">
+  <div class="grid__item" href="" ng-repeat="event in events" style="background: url('api/uploads/{{event.event_picture}}');
+  background-size: cover;">
+    <div class="backgroundFiller">
+      <h2 class="title title--preview">{{event.event_name}}</h2>
+      <div class="loader"></div>      
+      <div class="meta meta--preview">
+        <button class="meta__avatar clubLogo" ng-click='requestPass(event.event_id)'>REQUEST PASS</button>
+        
+        <span class="meta__date"><i class="fa fa-calendar-o"></i> {{event.start_time | date:'medium' }}</span>
+        <span class="meta__reading-time"> <a href="{{event.facebook_url}}"> Know More </a> </span>
+      </div>
+    </div>
+  </div>
+  <footer class="page-meta">
+
+  </footer>
+</section>

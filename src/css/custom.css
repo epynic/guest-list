@@ -1,0 +1,19 @@
+.home-main{
+	padding-top: 70px;
+}
+.title{
+}
+.meta{
+
+}
+.clubLogo{
+	border-radius: 0%; 
+}
+.backgroundFiller{
+	background: rgba(52, 73, 94, 0.9);
+	height: 225px;
+	color: #ecf0f1;
+}
+.loader{
+	background:rgba(255, 255, 255, 0.6);	
+}
